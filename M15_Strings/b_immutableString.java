@@ -7,7 +7,7 @@ class b_immutableString {
      * as SCP does not allow a duplicate copy in its memory space so s1 and s2
      * refers to a same string
      */
-    /* we can use == to check the refrence of string */
+    /* we can use == to check the reference of string */
 
     System.out.println(s1 == s2); /* we get true because both refers to a same string in SCP */
 
@@ -16,7 +16,7 @@ class b_immutableString {
 
     /*
      * when we create Strings by using a new keyword then they get located and
-     * refered in the heap memory space of the JVM
+     * referred in the heap memory space of the JVM
      * so s3 and s4 refers to different strings in heap memory space
      */
 
