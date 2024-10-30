@@ -1,5 +1,3 @@
-package M16_Encapsulation;
-
 class studentPrivate {
   private int privateStudentAge;
   private String privateStudentName;

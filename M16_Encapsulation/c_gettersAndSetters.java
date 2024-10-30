@@ -1,4 +1,3 @@
-package M16_Encapsulation;
 
 class customer {
   private String Name;

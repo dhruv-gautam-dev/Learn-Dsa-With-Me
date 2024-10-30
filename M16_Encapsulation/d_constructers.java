@@ -1,4 +1,3 @@
-package M16_Encapsulation;
 
 class college {
   private String collegeName;

@@ -1,4 +1,3 @@
-package M16_Encapsulation;
 
 class myClass {
   private int privateVarA;

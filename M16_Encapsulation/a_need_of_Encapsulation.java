@@ -1,4 +1,4 @@
-package M16_Encapsulation;
+// package M16_Encapsulation;
 
 class Student { // class student is private class we can not access it from outside
   int age;
