@@ -18,7 +18,6 @@ class farmer {
     System.out.println("Enter the time duration ");
     timeDuration = sc.nextFloat();
 
-    sc.close();
   }
 
   void calculateSimpleInterest() {
@@ -44,5 +43,7 @@ public class i_staticVariable_Method_Block {
     f2.input(sc); // taking input from user
     f2.calculateSimpleInterest(); // calculate si
     f2.display(); // display si.
+
+    sc.close();
   }
 }
