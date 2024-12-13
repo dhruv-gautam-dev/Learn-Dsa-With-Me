@@ -60,6 +60,47 @@ public class b_insertionInLinkedList {
       System.out.print(temp.data + " ");
       temp = temp.next;
     }
+
+  }
+
+  // Method to delete the node
+  void deleteNode(int pos) {
+    if (head == null) {
+      return;
+    }
+    Node temp = head;
+    // deletion is in the begining
+    if (pos == 0) {
+      head = temp.next;
+      return;
+
+    }
+
+    // if deletion is not in the beginning
+
+    for (int i = 0; temp != null && i < pos - 1; i++) {
+      temp = temp.next;
+    }
+    if (temp == null && temp.next == null) {
+      return;
+    }
+    temp.next = temp.next.next;
+  }
+
+  // Method to reverse the linkedList
+
+  public void ReverseLL() {
+    Node curr = head;
+    Node prev = null;
+    Node nextPtr = null;
+
+    while (curr != null) {
+      nextPtr = curr.next;
+      curr.next = prev;
+      prev = curr;
+      curr = nextPtr;
+    }
+    head = prev;
   }
 
   public static void main(String[] args) {
@@ -82,9 +123,30 @@ public class b_insertionInLinkedList {
     System.out.println("lets insert data after any node ");
 
     list1.displayLinkedList();
+    System.out.println();
 
+    System.out.println("lets delete data after any node ");
+
+    list1.deleteNode(3);
+    list1.displayLinkedList();
+    System.out.println();
+    System.out.println("lets reverse the linkedList ");
+    list1.ReverseLL();
+    list1.displayLinkedList();
+    ;
   }
 }
+
+/* OUTPUT */
+// insert data at end
+// original linedList is
+// 2 4 8
+// lets insert data at Beginning
+// 1 2 4 8
+// lets insert data after any node
+// 1 2 4 10 8
+// lets delete data after any node
+// 1 2 4 8
 
 /* Insertion */
 // we can do Insertion in 3 ways
